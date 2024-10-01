@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tensorrt_cpp_api",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "run_inference_benchmark::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_inference_benchmark-Debug-c170d566d49f0ca63790.json",
+					"name" : "run_inference_benchmark",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tensorrt_cpp_api::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tensorrt_cpp_api-Debug-f33ed82748d7500e841c.json",
+					"name" : "tensorrt_cpp_api",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/build",
+		"source" : "/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

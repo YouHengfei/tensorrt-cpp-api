@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/build",
+  "command": "/usr/bin/g++ -DFMT_SHARED -Dtensorrt_cpp_api_EXPORTS -I/usr/local/cuda/include -I/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/include -I/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/include/interfaces -isystem /usr/local/include/opencv4 -isystem /home/yuzhun/anaconda3/include  -Wall -Ofast -DNDEBUG -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/tensorrt_cpp_api.dir/src/engine.cpp.o -c /home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/src/engine.cpp",
+  "file": "/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/src/engine.cpp"
+},
+{
+  "directory": "/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/build",
+  "command": "/usr/bin/g++ -DFMT_SHARED -I/usr/local/cuda/include -I/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/include -I/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/include/interfaces -isystem /usr/local/include/opencv4 -isystem /home/yuzhun/anaconda3/include  -Wall -Ofast -DNDEBUG -Wno-deprecated-declarations -g -o CMakeFiles/run_inference_benchmark.dir/src/main.cpp.o -c /home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/src/main.cpp",
+  "file": "/home/yuzhun/dev_env/cpp_env/tensorrt-cpp-api/src/main.cpp"
+}
+]

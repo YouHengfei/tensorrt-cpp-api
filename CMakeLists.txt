@@ -13,20 +13,25 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
 # TODO: Specify the path to TensorRT root dir
 if (NOT TensorRT_DIR)
-    set(TensorRT_DIR /home/cyrus/work/libs/TensorRT-10.0.0.6/)
+    set(TensorRT_DIR "/usr/lib/x86_64-linux-gnu")
 endif()
 # Use the correct version of CUDA
 set(CUDA_TOOLKIT_ROOT_DIR /usr/local/cuda)
+set(CMAKE_TOOLCHAIN_FILE /home/yuzhun/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 # We require CUDA, OpenCV, and TensorRT
 find_package(TensorRT REQUIRED)
 find_package(CUDA REQUIRED)
+
+# Specify the path to OpenCV
+# set(OpenCV_DIR "/usr/lib/x86_64-linux-gnu/cmake/opencv4")
+set(OpenCV_DIR "/usr/local/lib/cmake/opencv4")
 find_package(OpenCV REQUIRED)
 find_package(fmt REQUIRED)
 
 add_library(tensorrt_cpp_api SHARED
         src/engine.cpp)
-
+        
 target_include_directories(tensorrt_cpp_api PUBLIC ${OpenCV_INCLUDE_DIRS} ${CUDA_INCLUDE_DIRS} ${TensorRT_INCLUDE_DIRS} include include/interfaces)
 target_link_libraries(tensorrt_cpp_api PUBLIC ${OpenCV_LIBS} ${CUDA_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${TensorRT_LIBRARIES} fmt::fmt)
 

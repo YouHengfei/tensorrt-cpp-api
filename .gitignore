@@ -13,7 +13,7 @@
 *.pch
 
 # Compiled Dynamic libraries
-*.so
+# *.so
 *.dylib
 *.dll
 
@@ -32,10 +32,10 @@
 *.out
 *.app
 
-build*/
-cmake-build-*
+# build*/
+# cmake-build-*
 .idea/
 .vscode/
 
-*.onnx
+
 
